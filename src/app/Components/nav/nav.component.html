@@ -1,38 +1,73 @@
-<nav class="navbar navbar-expand-lg bg-light navbar-light sticky-top font-style">
-  <div class="container-fluid">
-    <a class="navbar-brand " href="#">
-      <img src="/assets/logo.svg" class="icon-size" alt="">
-      <span class="ms-2 font-style ">Beto</span>
-
-    </a>
-
-
-
-    <ul class="navbar-nav ms-auto d-flex flex-row flex-nowrap px-3 gap-3 order-2">
-      <li class="nav-item  ">
-        <a class="nav-link border text-center rounded-circle icon-size" href="#">
-          <i class="fas fa-heart"></i>
-        </a>
-      </li>
-      <li class="nav-item ">
-        <a class="nav-link border text-center rounded-circle icon-size" href="#">
-          <i class="fas  fa-shopping-cart"></i>
-        </a>
-      </li>
-      <li class="nav-item  ">
-        <a class="nav-link border text-center rounded-circle icon-size" href="#">
-          <i class="fas  fa-user-circle"></i>
-        </a>
-      </li>
-
-    </ul>
-    <button class="navbar-toggler order-3" type="button" data-bs-toggle="collapse"
+<header class="sticky-top bg-light">
+  <!-- search  -->
+<div class="navbar navbar-expand-md  bg-light navbar-light ">
+  <div class="container-fluid py-2 ">
+    <button class="navbar-toggler order-3 border " type="button" data-bs-toggle="collapse"
       data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
       aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
+      <span class="navbar-toggler-icon text-primary"></span>
     </button>
+    <div class="">
+      <a class="navbar-brand " href="#">
+        <img src="/assets/logo.svg" class="icon-size" alt="">
+        <span class="ms-2 font-style ">Beto</span>
 
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      </a>
+    </div>
+    <div class="  collapse navbar-collapse justify-content-center">
+      <div class="col-lg-3 col-md-3 col-sm-12 p-0">
+        <select class="form-control" id="exampleFormControlSelect1">
+          <option>All Categories </option>
+          <option>Fashion</option>
+          <option>Supermarket</option>
+          <option>Electronics</option>
+          <option>Fitness and sport</option>
+          <option>Clothing</option>
+          <option>Furnitures</option>
+        </select>
+      </div>
+      <div class="col-lg-8 col-md-6 col-sm-12 p-0">
+        <input type="text" placeholder="Search..." class="form-control" id="search" name="search">
+      </div>
+      <div class="col-lg-1 col-md-1 col-sm-12    ">
+        <button type="submit" class="btn rounded bg-pr" >
+          <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none"
+            stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"
+            class="text-light">
+            <circle cx="10" cy="11" r="8"></circle>
+            <line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+          </svg>
+        </button>
+      </div>
+    </div>
+    <div class="">
+      <ul class="navbar-nav ms-auto d-flex flex-row flex-nowrap px-3 gap-3 order-2">
+        <li class="nav-item  ">
+          <a class="nav-link border text-center rounded-circle icon-size" href="#">
+            <i class="fas fa-heart"></i>
+          </a>
+        </li>
+        <li class="nav-item ">
+          <a class="nav-link border text-center rounded-circle icon-size" href="#">
+            <i class="fas  fa-shopping-cart"></i>
+          </a>
+        </li>
+        <li class="nav-item  ">
+          <a class="nav-link border text-center rounded-circle icon-size" href="#">
+            <i class="fas  fa-user-circle"></i>
+          </a>
+        </li>
+
+      </ul>
+    </div>
+  </div>
+</div>
+<nav class="navbar navbar-expand-md bg-light navbar-light  font-style">
+  <div class="container-fluid">
+
+
+
+    <div class="collapse navbar-collapse justify-content-center" id="navbarSupportedContent">
       <ul class="navbar-nav  mb-2 mb-lg-0 align-items-center ">
         <li class="nav-item">
           <a class="nav-link active" aria-current="page" href="#">All categories</a>
@@ -76,3 +111,5 @@
 
   </div>
 </nav>
+
+</header>
