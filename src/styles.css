@@ -4,6 +4,7 @@
 }
 * {
   scroll-behavior: smooth;
+  transition: all 1s;
 }
 .icon-size {
   width: 40px;

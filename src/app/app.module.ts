@@ -8,6 +8,10 @@ import { HeaderinfoComponent } from './Components/headerinfo/headerinfo.componen
 import { FooterComponent } from './Components/footer/footer.component';
 import { ProductDetailComponent } from './Components/product-detail/product-detail.component';
 import { RouterLink } from '@angular/router';
+import { ProductListComponent } from './Components/product-list/product-list.component';
+import { FeaturesComponent } from './Components/features/features.component';
+import { TestComponentComponent } from './Components/test-component/test-component.component';
+import { SlidePhotoComponent } from './Components/slide-photo/slide-photo.component';
 
 @NgModule({
   declarations: [
@@ -16,6 +20,10 @@ import { RouterLink } from '@angular/router';
     HeaderinfoComponent,
     FooterComponent,
     ProductDetailComponent,
+    ProductListComponent,
+    FeaturesComponent,
+    TestComponentComponent,
+    SlidePhotoComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

@@ -1,0 +1,11 @@
+.product:hover .opacity-none
+{
+  opacity: 1;
+}
+.product:hover .product-img {
+  opacity: .75;
+
+}
+.opacity-none{
+  opacity: 0;
+}
