@@ -5,16 +5,16 @@
 }
 .where {
   position: relative;
-  left: -131px;
-  top: -109px;
+  left: -8.1rem;
+  top: -6.8rem;
 }
 .css-button {
   border-radius: 50px;
   border: none;
-  background-color: #f0a27d;
+  background-color: #3fbaf3;
 }
 .css-button:hover {
-  background-color: #d65418;
+  background-color: #0278be;
 }
 .carousel-indicators button {
   background-color: black !important;
@@ -25,8 +25,8 @@
 }
 .point {
   cursor: pointer;
-  width: 30px;
-  height: 30px;
+  width: 1.9rem;
+  height: 1.9rem;
   text-align: center;
   border-radius: 50%;
   border: 0.5px solid black;
@@ -40,8 +40,8 @@
 }
 .bc-coller {
   background-color: #969696;
-  padding-top: 20px;
-  padding-left: 10px;
+  padding-top: 1.3rem;
+  padding-left: 0.8rem;
 }
 .bc-coller1 {
   background-color: #969696;
@@ -66,7 +66,7 @@
 /* Style the button and place it in the middle of the container/image */
 .carousel-inner {
   height: 55vh;
-  width: 100vw;
+  width: 98.7vw;
 }
 .carousel-inner .carousel-item {
   height: 100%;
