@@ -1,7 +1,6 @@
-@import "../../assets/_variable.scss";
+
 * {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
-    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
   box-sizing: border-box;
 }
 .where {
@@ -9,14 +8,13 @@
   left: -131px;
   top: -109px;
 }
-
 .css-button {
   border-radius: 50px;
   border: none;
-  background-color: lighten($main-color, 25%);
+  background-color: #f0a27d;
 }
 .css-button:hover {
-  background-color: $main-color;
+  background-color: #d65418;
 }
 .carousel-indicators button {
   background-color: black !important;
@@ -33,27 +31,24 @@
   border-radius: 50%;
   border: 0.5px solid black;
 }
-
 .container-fluid img {
   height: 100%;
   width: 100%;
 }
-
 .container {
   position: relative;
 }
 .bc-coller {
-  background-color: $second-colore;
+  background-color: #969696;
   padding-top: 20px;
   padding-left: 10px;
 }
 .bc-coller1 {
-  background-color: $second-colore;
+  background-color: #969696;
   padding-top: 10px;
   height: 92%;
   width: 100%;
 }
-
 .bc-coller img {
   height: 70%;
   width: 70%;
@@ -62,43 +57,36 @@
   height: 70%;
   width: 70%;
 }
-
-.bc-coller1 img:hover,
-.bc-coller img:hover {
+.bc-coller1 img:hover, .bc-coller img:hover {
   transform: scale(1.08, 1.08);
   transition: all 0.4s;
 }
-
 /* Make the image responsive */
-
 /* Style the button and place it in the middle of the container/image */
 .carousel-inner {
   height: 55vh;
   width: 100vw;
-  .carousel-item {
-    height: 100%;
-    width: 100%;
-    #photo1 {
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      grid-template-rows: 1fr;
-      height: 100%;
-      width: 100%;
-      grid-template-areas: "header header header";
-      img {
-        height: 100%;
-        width: 100%;
-        grid-area: header;
-        transition: all 0.5s ease-in;
-      }
-    }
-  }
 }
-
-.carousel-indicators {
-  .point {
-    @media (max-width: 56.8rem) {
-      opacity: 0 !important;
-    }
+.carousel-inner .carousel-item {
+  height: 100%;
+  width: 100%;
+}
+.carousel-inner .carousel-item #photo1 {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr;
+  height: 100%;
+  width: 100%;
+  grid-template-areas: "header header header";
+}
+.carousel-inner .carousel-item #photo1 img {
+  height: 100%;
+  width: 100%;
+  grid-area: header;
+  transition: all 0.5s ease-in;
+}
+@media (max-width: 56.8rem) {
+  .carousel-indicators .point {
+    opacity: 0 !important;
   }
 }
