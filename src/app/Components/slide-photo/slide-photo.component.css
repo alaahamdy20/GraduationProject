@@ -65,8 +65,8 @@
 /* Make the image responsive */
 /* Style the button and place it in the middle of the container/image */
 .carousel-inner {
-  height: 55vh;
-  width: 98.7vw;
+  height: 50%;
+  width: 100%;
 }
 .carousel-inner .carousel-item {
   height: 100%;
@@ -87,7 +87,21 @@
   transition: all 0.5s ease-in;
 }
 @media (max-width: 56.8rem) {
-  .carousel-indicators .point {
-    opacity: 0 !important;
+  .carousel-indicators {
+    display: none ;
+  }
+  .carousel-caption button {
+    display: none;
+  }
+  .carousel-caption h3 {
+    display: none;
+  }
+  .carousel-caption p {
+    display: none;
+  }
+}
+@media (min-width: 104rem) {
+  .carousel-indicators {
+    display: none;
   }
 }
