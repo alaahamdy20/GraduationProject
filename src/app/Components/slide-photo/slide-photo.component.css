@@ -1,0 +1,57 @@
+.where {
+  position: relative;
+  left: -8.1rem;
+  top: -6.8rem;
+}
+.css-button {
+  border-radius: 50px;
+  border: none;
+  background-color: #3fbaf3;
+}
+.css-button:hover {
+  background-color: #3167eb;
+}
+.carousel-indicators button {
+  background-color: black !important;
+  width: 10px !important;
+  height: 10px !important;
+  border-radius: 50%;
+  border: 0.5px solid black !important;
+  margin-left: 1rem;
+  margin-right: 1rem;
+}
+.carousel-indicators button div {
+  cursor: pointer;
+  width: 1.9rem;
+  height: 1.9rem;
+  text-align: center;
+  border-radius: 50%;
+  border: 0.5px solid black;
+  transform: translateX(-0.7rem) translateY(-0.6rem);
+}
+
+@media (max-width: 56.8rem) {
+  .carousel-caption button {
+    display: none;
+  }
+  .carousel-caption h3 {
+    display: none;
+  }
+  .carousel-caption p {
+    display: none;
+  }
+}
+@media (min-width: 125rem) {
+  .carousel-indicators {
+    display: none;
+  }
+  .carousel-caption button {
+    display: none;
+  }
+  .carousel-caption h3 {
+    display: none;
+  }
+  .carousel-caption p {
+    display: none;
+  }
+}
