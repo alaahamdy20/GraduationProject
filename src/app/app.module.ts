@@ -14,6 +14,8 @@ import { TestComponentComponent } from './Components/test-component/test-compone
 import { SlidePhotoComponent } from './Components/slide-photo/slide-photo.component';
 import { PageNotFoundComponent } from './Components/page-not-found/page-not-found.component';
 import { HomeComponent } from './Components/home/home.component';
+import { PopularProductComponent } from './Components/popular-product/popular-product.component';
+import { NewArrivedProductComponent } from './Components/new-arrived-product/new-arrived-product.component';
 
 @NgModule({
   declarations: [
@@ -27,7 +29,9 @@ import { HomeComponent } from './Components/home/home.component';
     TestComponentComponent,
     SlidePhotoComponent,
     PageNotFoundComponent,
-    HomeComponent
+    HomeComponent,
+    PopularProductComponent,
+    NewArrivedProductComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

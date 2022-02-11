@@ -1,0 +1,204 @@
+/* -----------------------------------------------------------Second Cart----------------------------------------------------------- */
+
+* {
+    box-sizing: border-box;
+}
+
+.container {
+    position: relative;
+}
+
+.container .card {
+    position: relative;
+    width: 320px;
+    height: 420px;
+    background: #131313;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.container .card::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: #9bcd28;
+    clip-path: circle(150px at 80% 20%);
+    transition: .8s ease-in-out;
+}
+
+.container .card:hover::before {
+    clip-path: circle(300px at 80% -20%);
+}
+
+.container .card::after {
+    content: 'Nike';
+    position: absolute;
+    top: 30%;
+    left: -20%;
+    font-size: 12em;
+    font-weight: 800;
+    font-style: italic;
+    color: rgba(255, 255, 255, 0.04);
+}
+
+.container .card .imgbox {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 10000;
+    width: 100%;
+    height: 220px;
+    transition: .5s;
+}
+
+.container .card:hover .imgbox {
+    top: 0%;
+    transform: translateY(0%);
+}
+
+.container .card .imgbox img {
+    position: absolute;
+    left: 10%;
+    transform: translate(-50%, -50%) rotate(-25%);
+    width: 270px;
+}
+
+.container .card .contentbox {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    z-index: 10;
+    bottom: 50%;
+    transition: all 1s ease-in-out;
+}
+
+.container .card:hover .contentbox {
+    top: 57%;
+}
+
+.container .card .contentbox {
+    position: relative;
+    font-weight: 600;
+    top: 70%;
+    letter-spacing: 1px;
+    color: #fff;
+}
+
+.container .card .contentbox .size {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 1s ease-in-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .card .contentbox .color {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 20px;
+    transition: 1s;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.container .card:hover .contentbox .size {
+    transition-delay: .25s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.container .card:hover .contentbox .color {
+    transition-delay: .25s;
+    opacity: 1;
+    visibility: visible;
+}
+
+.container .card .contentbox .size h2 {
+    color: #fff;
+    font-weight: 300;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-right: 10px;
+}
+
+.container .card .contentbox .size span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 26px;
+    font-size: 14px;
+    display: inline-block;
+    color: #111;
+    background: #fff;
+    cursor: pointer;
+    margin: 0 5px;
+    transition: .5s;
+    color: rgb(29, 20, 20);
+    border-radius: 4px;
+}
+
+.container .card .contentbox .size span:hover {
+    background: #9bdc28;
+}
+
+.container .card .contentbox .color span {
+    width: 20px;
+    display: inline-block;
+    height: 20px;
+    background: #ff0;
+    border-radius: 50%;
+    margin: 0 5px;
+    cursor: pointer;
+}
+
+.container .card .contentbox .color span:nth-child(2) {
+    background: #9bcd28;
+}
+
+.container .card .contentbox .color span:nth-child(3) {
+    background: #507688;
+}
+
+.container .card .contentbox .color span:nth-child(4) {
+    background: #159999;
+}
+
+.container .card .contentbox a {
+    background: #9bcd28;
+    display: inline-block;
+    width: 100%;
+    padding: 10px;
+    background: #fff;
+    border-radius: 10px;
+    margin-top: 10px;
+    text-decoration: none;
+    font-weight: 600;
+    color: #111;
+    opacity: 0;
+    position: relative;
+    transition: .5s;
+    bottom: 0%;
+}
+
+.container .card:hover .contentbox a {
+    opacity: 1;
+    bottom: 0%;
+    transform: translateY(0);
+    transition-delay: .5s;
+}
+
+.container .card .contentbox a:hover {
+    background-color: rgb(68, 86, 87);
+    color: cornsilk;
+}
+
+
+/* -----------------------------------------------------------End Second----------------------------------------------------------- */
