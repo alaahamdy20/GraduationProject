@@ -12,6 +12,8 @@ import { ProductListComponent } from './Components/product-list/product-list.com
 import { FeaturesComponent } from './Components/features/features.component';
 import { TestComponentComponent } from './Components/test-component/test-component.component';
 import { SlidePhotoComponent } from './Components/slide-photo/slide-photo.component';
+import { PageNotFoundComponent } from './Components/page-not-found/page-not-found.component';
+import { HomeComponent } from './Components/home/home.component';
 
 @NgModule({
   declarations: [
@@ -23,7 +25,9 @@ import { SlidePhotoComponent } from './Components/slide-photo/slide-photo.compon
     ProductListComponent,
     FeaturesComponent,
     TestComponentComponent,
-    SlidePhotoComponent
+    SlidePhotoComponent,
+    PageNotFoundComponent,
+    HomeComponent
   ],
   imports: [BrowserModule, AppRoutingModule],
   providers: [],

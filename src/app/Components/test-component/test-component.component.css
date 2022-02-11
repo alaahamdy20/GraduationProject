@@ -1,3 +1,4 @@
+
 .product:hover .opacity-none
 {
   opacity: 1;
@@ -9,3 +10,4 @@
 .opacity-none{
   opacity: 0;
 }
+

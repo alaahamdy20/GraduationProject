@@ -6,7 +6,8 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./test-component.component.css']
 })
 export class TestComponentComponent implements OnInit {
-
+  showLoginButton = true;
+  userAccount = "Alaa"
   constructor() { }
 
   ngOnInit(): void {
